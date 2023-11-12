@@ -1,3 +1,4 @@
 import { StickyNavbar } from "./StickyNavbar";
+import Header from "./Header";
 
-export { StickyNavbar };
+export { StickyNavbar, Header };
