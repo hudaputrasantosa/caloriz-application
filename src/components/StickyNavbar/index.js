@@ -25,7 +25,7 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal">
+        className="p-1 font-normal hover:font-semibold hover:text-blue-600 ">
         <Link to="/" className="flex items-center">
           Homepage
         </Link>
@@ -34,7 +34,7 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal">
+        className="p-1 font-normal hover:font-semibold hover:text-blue-600">
         <Link to="/about" className="flex items-center">
           About Us
         </Link>
@@ -44,7 +44,7 @@ export function StickyNavbar() {
 
   return (
     <div>
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 fixed">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
@@ -116,36 +116,6 @@ export function StickyNavbar() {
           </div>
         </MobileNav>
       </Navbar>
-      <div className="gap-8 items-center py-8 px-5 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img
-          className="w-full dark:hidden rounded-md"
-          src="https://www.energy.fit/cdn/shop/articles/calories_1.jpg?v=1638556190&width=2048"
-          alt="dashboard image"
-        />
-        <img
-          className="w-full hidden dark:block"
-          src="https://www.energy.fit/cdn/shop/articles/calories_1.jpg?v=1638556190&width=2048"
-          alt="dashboard image"
-        />
-        <div className="mt-4 md:mt-0">
-          <Typography variant="h2" color="blue-gray" className="mb-2">
-            BURN🔥 Caloriz
-          </Typography>
-          <Typography color="gray" className="font-normal">
-            Can you help me out? you will get a lot of free exposure doing this
-            can my website be in english?. There is too much white space do less
-            with more, so that will be a conversation piece can you rework to
-            make the pizza look more delicious other agencies charge much lesser
-            can you make the blue bluer?. I think we need to start from scratch
-            can my website be in english?
-          </Typography>
-          <Link to="/predict">
-            <Button color="blue" className="mt-5">
-              If you want to predict
-            </Button>
-          </Link>
-        </div>
-      </div>
     </div>
   );
 }
