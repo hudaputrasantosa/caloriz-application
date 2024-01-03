@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Typography } from "@material-tailwind/react";
 import { Footer, Header, StickyNavbar } from "../../components";
+import "./index.css";
 
 const Home = () => {
   const features = [
@@ -48,8 +49,8 @@ const Home = () => {
   return (
     <>
       <StickyNavbar />
-      <section className="py-8">
-        <div className="gap-8 items-center py-8 px-5 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+      <section className="my-6 mt-12">
+        <div className="gap-8 items-center  py-8 px-5 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <img
             className="w-full dark:hidden rounded-md"
             src="https://www.energy.fit/cdn/shop/articles/calories_1.jpg?v=1638556190&width=2048"
@@ -60,11 +61,16 @@ const Home = () => {
             src="https://www.energy.fit/cdn/shop/articles/calories_1.jpg?v=1638556190&width=2048"
             alt="dashboard image"
           />
-          <div className="mt-4 md:mt-0">
-            <Typography variant="h2" color="blue-gray" className="mb-2">
+          <div className="mt-4 md:mt-0 lg:justify-start justify-center">
+            <Typography
+              variant="h2"
+              color="blue-gray"
+              className=" text-4xl lg:text-left text-center font-extrabold leading-tight lg:text-6xl text-dark-grey-700 mb-4">
               BURN🔥 Caloriz
             </Typography>
-            <Typography color="gray" className="font-normal">
+            <Typography
+              color="gray"
+              className="font-normal leading-normal text-justify">
               Can you help me out? you will get a lot of free exposure doing
               this can my website be in english?. There is too much white space
               do less with more, so that will be a conversation piece can you
@@ -73,7 +79,7 @@ const Home = () => {
               from scratch can my website be in english?
             </Typography>
             <a href="#predict">
-              <Button color="blue" className="mt-5">
+              <Button color="blue" className="mt-5 lg:w-fit w-full">
                 Start Predict
               </Button>
             </a>
@@ -81,13 +87,13 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-8">
+      <section className="my-6">
         <div
-          className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-16 justify-between md:px-8 lg:flex"
+          className="max-w-screen-xl mx-auto px-4 gap-16 justify-between md:px-8 lg:flex"
           id="predict">
           <div>
             <div className="max-w-xl space-y-3">
-              <p className="text-gray-800 text-2xl font-semibold sm:text-3xl">
+              <p className=" text-3xl font-extrabold lg:text-left text-center leading-tight lg:text-5xl text-gray-900">
                 Our Feature is simple solutions
               </p>
             </div>
@@ -108,13 +114,15 @@ const Home = () => {
                 ))}
               </ul>
               <Link to="/predict">
-                <Button color="blue" className="mt-5 font-semibold">
+                <Button
+                  color="blue"
+                  className="mt-5 font-semibold lg:w-fit w-full">
                   Predict activity now!
                 </Button>
               </Link>
             </div>
           </div>
-          <div className="mt-12 lg:mt-0">
+          <div className="mt-12 lg:mt-0 lg:block hidden">
             <img
               src="https://img.freepik.com/premium-vector/vector-illustration-business-team-analysis-monitoring-web-report-dashboard-monitor_675567-3177.jpg?w=740"
               className="w-full"
@@ -124,19 +132,19 @@ const Home = () => {
       </section>
 
       <div className="py-8">
-        <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-          <div className="max-w-xl mx-auto text-center">
-            <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+        <section className="max-w-screen-xl mx-auto px-4 md:px-8">
+          <div className="max-w-xl mx-auto text-center gap-y-6">
+            <h3 className=" text-3xl font-extrabold leading-tight lg:text-5xl text-dark-grey-800">
               BurnCaloriz🔥 supported by?
             </h3>
-            <p className="text-gray-600 mt-3">
+            <p className="text-gray-600 mt-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               dignissim nibh nisl, vel egestas magna rhoncus at. Nunc elementum
               efficitur tortor in laoreet.
             </p>
           </div>
-          <div className="mt-12 flex justify-center mx-auto">
-            <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-12 md:grid-cols-3 lg:grid-cols-3 mx-auto">
+          <div className="mt-12 flex justify-center">
+            <ul className="inline-grid grid-cols-2 gap-x-10 gap-y-6 md:gap-x-12 md:grid-cols-3 lg:grid-cols-2 mx-auto items-center">
               {/* LOGO 1 */}
               <li>
                 <img
@@ -154,18 +162,9 @@ const Home = () => {
                   src={require("./../../assets/images/ittp.png")}
                 />
               </li>
-
-              {/* LOGO 3 */}
-              <li>
-                <img
-                  className="w-11 my-auto"
-                  fill="none"
-                  src={require("./../../assets/images/se.png")}
-                />
-              </li>
             </ul>
           </div>
-        </div>
+        </section>
       </div>
 
       <Footer />
