@@ -7,7 +7,7 @@ const About = () => {
       avatar:
         "https://hudaputrasantosa.github.io/assets/img/huda-putra-santosa.png",
       name: "Huda Putra Santosa",
-      title: "Web/Backend Developer | Software Engineer",
+      title: "Fullstack Developer | Software Engineer",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
@@ -28,35 +28,39 @@ const About = () => {
     <>
       <StickyNavbar />
 
-      <section className="py-14">
-        <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-          <div className="max-w-xl">
-            <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-              Meet our talent team
-            </h3>
-            <p className="text-gray-600 mt-3">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum has been the industry's standard dummy.
-            </p>
-          </div>
+      <section className="lg:my-28 my-20">
+        <div className="w-full lg:px-0 px-6 text-center">
+          <h3 className=" text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
+            Meet our talent team
+          </h3>
+          <p className="text-gray-600 mt-3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.Lorem Ipsum has been the industry's standard dummy.
+          </p>
+        </div>
+        <div className="max-w-screen-xl lg:px-0 px-12 mx-auto px-4 md:px-8">
           <div className="mt-12">
-            <ul className="grid gap-8 lg:grid-cols-2">
+            <ul className="grid gap-8 lg:grid-cols-2 lg:text-left text-center">
               {team.map((item, idx) => (
                 <li key={idx} className="gap-8 sm:flex">
-                  <div className="w-full h-60">
+                  <div className="w-full h-48 mb-14">
                     <img
                       src={item.avatar}
-                      className="w-full h-full object-cover object-center shadow-md rounded-xl"
+                      className="w-full lg:h-full h-60 object-cover object-center shadow-md rounded-xl"
                       alt=""
                     />
                   </div>
                   <div className="mt-4 sm:mt-0">
-                    <h4 className="text-lg text-gray-700 font-semibold">
+                    <h4 className="text-xl text-gray-900 font-bold">
                       {item.name}
                     </h4>
-                    <p className="text-indigo-600">{item.title}</p>
-                    <p className="text-gray-600 mt-2">{item.desc}</p>
-                    <div className="mt-3 flex gap-4 text-gray-400">
+                    <p className="text-blue-600 font-medium text-base">
+                      {item.title}
+                    </p>
+                    <p className="text-gray-600 mt-2 text-justify">
+                      {item.desc}
+                    </p>
+                    <div className="mt-3 flex gap-8 text-gray-400 lg:justify-start justify-center">
                       <a href={item.twitter}>
                         <svg
                           className="w-5 h-5 duration-150 hover:text-gray-500"
