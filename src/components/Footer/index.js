@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-white bg-blue-gray-900 py-5 mt-10 max-w-full mx-auto md:px-8">
-      <div className="max-w-lg sm:mx-auto sm:text-center">
+    <footer className="text-white bg-blue-gray-900 py-5 mt-10 max-w-full mx-auto lg:px-8 px-6 lg:justify-start justify-center lg:text-left text-center">
+      <div className="max-w-lg mx-auto text-center pt-4">
         <h1 className="text-white font-bold text-lg">BurnCaloriz🔥</h1>
         <p className="leading-relaxed mt-2 text-[15px]">
           Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -15,7 +15,7 @@ const Footer = () => {
           &copy; 2022 Float UI All rights reserved.
         </div>
         <div className="mt-5 sm:mt-0">
-          <ul className="flex items-center space-x-4">
+          <ul className="flex items-center lg:justify-start justify-center space-x-4">
             <li className="w-10 h-10 border rounded-full flex items-center justify-center">
               <a href="javascript:void()">
                 <svg class="svg-icon w-6 h-6 text-blue-400" viewBox="0 0 20 20">
