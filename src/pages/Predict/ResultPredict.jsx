@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import SearchPredict from "./SearchPredict";
 import usePredict from "./hooks/usePredict";
-import { Footer, StickyNavbar } from "../../components";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 
 const ResultPredict = () => {
@@ -31,8 +29,6 @@ const ResultPredict = () => {
 
   return (
     <>
-      <StickyNavbar />
-      <SearchPredict />
       {loading ? (
         "Loading.. please wait"
       ) : (
@@ -42,7 +38,6 @@ const ResultPredict = () => {
           </div>
         </div>
       )}
-      <Footer />
     </>
   );
 };
