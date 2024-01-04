@@ -20,7 +20,7 @@ const CalculateBmr = () => {
   };
 
   return (
-    <div className="container mt-32 my-16 px-32 justify-center">
+    <div className="container lg:mt-32 mt-20 my-16 lg:px-32 px-8 justify-center">
       <h3 className="text-center my-8 text-2xl font-bold text-gray-900">
         Calculate BMR (Basal Metabolic Rate)
       </h3>
