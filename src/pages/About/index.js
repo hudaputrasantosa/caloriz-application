@@ -28,8 +28,8 @@ const About = () => {
     <>
       <StickyNavbar />
 
-      <section className="lg:my-28 my-20">
-        <div className="w-full lg:px-0 px-6 text-center">
+      <section className="lg:my-28 my-20 px-4">
+        <div className="w-full text-center">
           <h3 className=" text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
             Meet our talent team
           </h3>
