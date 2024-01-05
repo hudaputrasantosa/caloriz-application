@@ -17,11 +17,15 @@ const ResultPredict = () => {
             className="mb-2 lg:text-lg text-sm">
             {predict.name}
           </Typography>
-          <Typography className="lg:text-sm text-xs">
-            Prediksi Kalori : {predict.calories_per_hour}
+          <Typography className="lg:text-sm text-xs font-normal">
+            Calories Burned :{" "}
+            <span className="font-semibold">{predict.calories_per_hour}</span>{" "}
+            /calories
           </Typography>
-          <Typography className="lg:text-sm text-xs">
-            Durasi Aktifitas : {predict.duration_minutes} Menit
+          <Typography className="lg:text-sm text-xs font-normal">
+            Activity Duration :{" "}
+            <span className="font-semibold">{predict.duration_minutes}</span>{" "}
+            Minutes
           </Typography>
         </CardBody>
       </Card>
@@ -32,7 +36,7 @@ const ResultPredict = () => {
       {loading ? (
         "Loading.. please wait"
       ) : (
-        <div className="container mx-auto my-2 lg:px-8 px-4">
+        <div className="container mx-auto my-2 lg:px-12 px-4">
           <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-6 gap-3">
             {render()}
           </div>
