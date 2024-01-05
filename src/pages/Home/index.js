@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button, Typography } from "@material-tailwind/react";
-import { Footer, Header, StickyNavbar } from "../../components";
+import { Footer, StickyNavbar } from "../../components";
 import "./index.css";
 
 const Home = () => {
   const features = [
+    {
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+          />
+        </svg>
+      ),
+      title: "Calculate BMR",
+      desc: "Determine your activity will calculate calorie",
+    },
     {
       icon: (
         <svg
@@ -41,10 +60,14 @@ const Home = () => {
           />
         </svg>
       ),
-      title: "Analysis",
+      title: "Analysis and Get burned calorie",
       desc: "Get result of analysis from calculate calorie",
     },
   ];
+
+  useEffect(() => {
+    document.title = "🔥 | Homepage";
+  }, []);
 
   return (
     <>
@@ -52,13 +75,8 @@ const Home = () => {
       <section className="my-6 mt-12">
         <div className="gap-8 items-center  py-8 px-5 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <img
-            className="w-full dark:hidden rounded-md"
-            src="https://www.energy.fit/cdn/shop/articles/calories_1.jpg?v=1638556190&width=2048"
-            alt="dashboard image"
-          />
-          <img
-            className="w-full hidden dark:block"
-            src="https://www.energy.fit/cdn/shop/articles/calories_1.jpg?v=1638556190&width=2048"
+            className="w-full rounded-2xl rotate-6"
+            src={require("../../assets/images/hero.png")}
             alt="dashboard image"
           />
           <div className="mt-4 md:mt-0 lg:justify-start justify-center">
@@ -113,7 +131,7 @@ const Home = () => {
                   </li>
                 ))}
               </ul>
-              <Link to="/predict">
+              <Link to="/predict" replace>
                 <Button
                   color="blue"
                   className="mt-5 font-semibold lg:w-fit w-full">

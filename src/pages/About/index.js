@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Footer, StickyNavbar } from "../../components";
 
 const About = () => {
@@ -15,15 +15,20 @@ const About = () => {
     },
     {
       avatar:
-        "https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80",
-      name: "Micheal colorand",
-      title: "Software engineer",
+        "https://media.licdn.com/dms/image/D5603AQFsl3IkETKf0g/profile-displayphoto-shrink_800_800/0/1681444246125?e=1709769600&v=beta&t=Af3XHz9taZBPTnBmGuOgc11TjbjK4WV352CAQiea8Dc",
+      name: "Fajar Maulana Thaariq Alburuuj",
+      title: "Document Engineer | Software Engineer",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
       github: "javascript:void(0)",
     },
   ];
+
+  useEffect(() => {
+    document.title = "🔥 | Our Team";
+  }, []);
+
   return (
     <>
       <StickyNavbar />

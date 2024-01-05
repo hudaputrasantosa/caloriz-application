@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import ResultPredict from "./ResultPredict";
 import CalculateBmr from "./CalculateBmr";
 import SearchPredict from "./SearchPredict";
@@ -20,6 +20,10 @@ function PredictProvider({ children }) {
   const [predict, setPredict] = useState([]);
   const [activities, setActivities] = useState([]);
 
+  useEffect(() => {
+    document.title = "🔥 | Calculate & Predict";
+  }, []);
+
   return (
     <PredictContext.Provider
       value={{
@@ -39,9 +43,11 @@ const Predict = () => {
   return (
     <PredictProvider>
       <StickyNavbar />
-      <CalculateBmr />
-      <SearchPredict />
-      <ResultPredict />
+      <div className="lg:px-20 px-2">
+        <CalculateBmr />
+        <SearchPredict />
+        <ResultPredict />
+      </div>
       <Footer />
     </PredictProvider>
   );
