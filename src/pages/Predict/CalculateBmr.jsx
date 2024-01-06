@@ -8,15 +8,15 @@ const CalculateBmr = () => {
   const [sex, setSex] = useState("male");
   let [result, setResult] = useState(0);
 
-  const handleCalculate = () => {
+  const handleCalculate = async () => {
     const calculate =
-      sex == "male"
+      (await sex) == "male"
         ? 66.5 + 13.7 * weight + 5 * height - 6.8 * age
         : 65.5 + 9.6 * weight + 1.8 * height - 4.7 * age;
     setResult(calculate);
-    setHeight(0);
-    setWeight(0);
-    setAge(0);
+    setHeight(null);
+    setWeight(null);
+    setAge(null);
   };
 
   return (

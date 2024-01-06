@@ -18,7 +18,7 @@ const usePredict = () => {
           },
         }
       );
-      setSearch(response?.data);
+      await setSearch(response.data);
     } catch (error) {
       console.log("error ->", error);
     }
