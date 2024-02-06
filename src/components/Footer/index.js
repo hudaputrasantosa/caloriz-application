@@ -6,13 +6,13 @@ const Footer = () => {
       <div className="max-w-lg mx-auto text-center pt-4">
         <h1 className="text-white font-bold text-lg">BurnCaloriz🔥</h1>
         <p className="leading-relaxed mt-2 text-[15px]">
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s.
+          Selamat datang di BurnCaloriz, tempat terbaik untuk merencanakan
+          perjalanan kesehatan dan kebugaran Anda!
         </p>
       </div>
       <div className="mt-5 items-center justify-between sm:flex">
         <div className="mt-4 sm:mt-0">
-          &copy; 2022 Float UI All rights reserved.
+          &copy; 2024 BurnCaloriz🔥 All rights reserved.
         </div>
         <div className="mt-5 sm:mt-0">
           <ul className="flex items-center lg:justify-start justify-center space-x-4">

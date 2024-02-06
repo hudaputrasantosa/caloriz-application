@@ -23,13 +23,13 @@ const CalculateBmr = () => {
     <div className="container lg:mt-32 mt-20 my-16 lg:px-32 px-2 justify-center">
       <div className="mx-auto text-center mb-6">
         <h3 className="text-3xl my-2 text-gray-800 font-extrabold">
-          Calculate BMR (Basal Metabolic Rate)
+          Kalkulasi BMR (Basal Metabolic Rate)
         </h3>
         <p className="max-w-2xl mx-auto my-2 leading-normal text-gray-600">
-          The BMR (Basal Metabolic Rate) calculation system applies the
-          Harris-Benedict formula which is the most commonly used formula for
-          calculating BMR. This formula is based on several factors, namely
-          weight, height and age.
+          Sistem penghitungan BMR (Tingkat Metabolisme Basal) menerapkan Rumus
+          Harris-Benedict yang merupakan rumus yang paling umum digunakan untuk
+          menghitung BMR. Rumus ini didasarkan pada beberapa faktor, yaitu berat
+          badan, tinggi badan dan usia.
         </p>
       </div>
       <div class="flex lg:flex-row flex-col mx-auto justify-center items-stretch gap-x-10">
@@ -38,13 +38,13 @@ const CalculateBmr = () => {
             <label
               for="first_name"
               class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-              Height
+              Tinggi Badan
             </label>
             <input
               type="number"
               id="height"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block lg:w-fit w-full p-2.5"
-              placeholder="Input Height .."
+              placeholder="Masukkan tinggi badan"
               onChange={(e) => setHeight(e.target.value)}
               value={height}
               required
@@ -54,13 +54,13 @@ const CalculateBmr = () => {
             <label
               for="first_name"
               class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-              Weight
+              Berat Badan
             </label>
             <input
               type="number"
               id="weight"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block lg:w-fit w-full p-2.5 "
-              placeholder="Input Weight .."
+              placeholder="Masukkan berat badan"
               onChange={(e) => setWeight(e.target.value)}
               value={weight}
               required
@@ -70,13 +70,13 @@ const CalculateBmr = () => {
             <label
               for="age"
               class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-              Age
+              Umur
             </label>
             <input
               type="number"
               id="age"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block lg:w-fit w-full p-2.5"
-              placeholder="Input Age .."
+              placeholder="Masukkan umur"
               onChange={(e) => setAge(e.target.value)}
               value={age}
               required
@@ -87,26 +87,26 @@ const CalculateBmr = () => {
           <label
             for="sex"
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-            Select Sex
+            Pilih Jenis Kelamin
           </label>
           <select
             id="sex"
             onChange={(e) => setSex(e.target.value)}
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block lg:w-fit w-full p-2.5 ">
             <option value="male" selected>
-              Male
+              Laki-laki
             </option>
-            <option value="female">Female</option>
+            <option value="female">Perempuan</option>
           </select>
           <p className="my-4">
-            <span className="font-bold text-lg">{result} </span> Calorie/Day
+            <span className="font-bold text-lg">{result} </span> Kalori/Hari
           </p>
           <Button
             color="blue"
             type="submit"
             onClick={() => handleCalculate()}
             className="my-auto bottom-0 font-semibold lg:w-fit w-full">
-            Calculate BMR
+            Kalkulasi BMR
           </Button>
         </div>
       </div>

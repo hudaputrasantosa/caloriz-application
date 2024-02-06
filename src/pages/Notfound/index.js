@@ -1,8 +1,11 @@
 import { Button } from "@material-tailwind/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Notfound = () => {
+  useEffect(() => {
+    document.title = "Halaman tidak ditemukan";
+  }, []);
   return (
     <main>
       <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-start h-screen md:px-8">
@@ -13,17 +16,17 @@ const Notfound = () => {
           <div className="mt-12 flex-1 max-w-lg space-y-3 md:mt-0">
             <h3 className="text-indigo-600 font-semibold">404 Error</h3>
             <p className="text-gray-800 text-4xl font-semibold sm:text-5xl">
-              Page not found
+              Halaman tidak ditemukan!
             </p>
             <p className="text-gray-600">
-              Sorry, the page you are looking for could not be found or has been
-              removed.
+              Maaf, Halaman yang kamu temukan tidak dapat diproses dan kami
+              hapus dari pencarian anda.
             </p>
             <Link to="/">
               <Button
                 color="blue"
                 className="duration-150 font-medium inline-flex items-center gap-x-1">
-                Go back
+                Kembali..
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"

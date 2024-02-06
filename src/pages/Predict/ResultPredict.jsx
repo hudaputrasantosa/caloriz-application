@@ -18,14 +18,14 @@ const ResultPredict = () => {
             {predict.name}
           </Typography>
           <Typography className="lg:text-sm text-xs font-normal">
-            Calories Burned :{" "}
+            Kalori yang terbakar :{" "}
             <span className="font-semibold">{predict.calories_per_hour}</span>{" "}
-            /calories
+            kalori
           </Typography>
           <Typography className="lg:text-sm text-xs font-normal">
-            Activity Duration :{" "}
+            Durasi Aktivitas :{" "}
             <span className="font-semibold">{predict.duration_minutes}</span>{" "}
-            Minutes
+            Menit
           </Typography>
         </CardBody>
       </Card>

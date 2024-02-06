@@ -27,7 +27,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="py-2 px-3 font-medium hover:bg-gray-100 rounded-md">
         <Link to="/" className="flex items-center">
-          Homepage
+          Beranda
         </Link>
       </Typography>
       <Typography
@@ -36,7 +36,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="py-2 px-3 font-medium hover:bg-gray-100 rounded-md">
         <Link to="/about" className="flex items-center">
-          Our Team
+          Tim Kami
         </Link>
       </Typography>
     </ul>

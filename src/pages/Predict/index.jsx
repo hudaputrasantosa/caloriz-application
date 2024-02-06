@@ -21,7 +21,7 @@ function PredictProvider({ children }) {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    document.title = "🔥 | Calculate & Predict";
+    document.title = "🔥 | Prediksi";
   }, []);
 
   return (

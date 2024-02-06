@@ -22,8 +22,8 @@ const Home = () => {
           />
         </svg>
       ),
-      title: "Calculate BMR",
-      desc: "Determine your activity will calculate calorie",
+      title: "Kalkulasi BMR",
+      desc: "Perhitungan kalori yang harus dibakar",
     },
     {
       icon: (
@@ -41,8 +41,8 @@ const Home = () => {
           />
         </svg>
       ),
-      title: "Choose Activity",
-      desc: "Determine your activity will calculate calorie",
+      title: "Pilih Aktivitas Kebugaran",
+      desc: "Tentukan aktifitas kebugaran yang anda rencanakan",
     },
     {
       icon: (
@@ -60,13 +60,13 @@ const Home = () => {
           />
         </svg>
       ),
-      title: "Analysis and Get burned calorie",
-      desc: "Get result of analysis from calculate calorie",
+      title: "Analisis dan Prediksi Kalori",
+      desc: "Dapatkan hasil kalori yang akan dibakar melalui kalkulasi BMR dan aktivitas kebugaran.",
     },
   ];
 
   useEffect(() => {
-    document.title = "🔥 | Homepage";
+    document.title = "🔥 | Beranda";
   }, []);
 
   return (
@@ -89,16 +89,14 @@ const Home = () => {
             <Typography
               color="gray"
               className="font-normal leading-normal text-justify">
-              Can you help me out? you will get a lot of free exposure doing
-              this can my website be in english?. There is too much white space
-              do less with more, so that will be a conversation piece can you
-              rework to make the pizza look more delicious other agencies charge
-              much lesser can you make the blue bluer?. I think we need to start
-              from scratch can my website be in english?
+              Layanan eksklusif untuk mengoptimalkan perencanaan pembakaran
+              kalori anda melalui kalkulasi BMR yang akurat dan prediksi kalori
+              yang terbakar melalui berbagai aktivitas olahraga sesuai pilihan
+              Anda.
             </Typography>
             <a href="#predict">
               <Button color="blue" className="mt-5 lg:w-fit w-full">
-                Start Predict
+                Mulai Prediksi
               </Button>
             </a>
           </div>
@@ -112,7 +110,7 @@ const Home = () => {
           <div>
             <div className="max-w-xl space-y-3">
               <p className=" text-3xl font-extrabold lg:text-left text-center leading-tight lg:text-5xl text-gray-900">
-                Our Feature is simple solutions
+                Fitur kami solusi yang sederhana
               </p>
             </div>
             <div className="mt-8 max-w-lg lg:max-w-none">
@@ -135,7 +133,7 @@ const Home = () => {
                 <Button
                   color="blue"
                   className="mt-5 font-semibold lg:w-fit w-full">
-                  Predict activity now!
+                  Prediksi Sekarang!
                 </Button>
               </Link>
             </div>
@@ -153,12 +151,11 @@ const Home = () => {
         <section className="max-w-screen-xl mx-auto px-4 md:px-8">
           <div className="max-w-xl mx-auto text-center gap-y-6">
             <h3 className=" text-3xl font-extrabold leading-tight lg:text-5xl text-dark-grey-800">
-              BurnCaloriz🔥 supported by?
+              BurnCaloriz🔥 didukung oleh?
             </h3>
             <p className="text-gray-600 mt-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              dignissim nibh nisl, vel egestas magna rhoncus at. Nunc elementum
-              efficitur tortor in laoreet.
+              terdapat instansi yang mendukung dalam proses pembangunan website
+              BurnCaloriz🔥, diantaranya
             </p>
           </div>
           <div className="mt-12 flex justify-center">
