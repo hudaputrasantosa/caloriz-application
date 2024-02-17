@@ -1,6 +1,8 @@
 # BurnCaloriz - Pengoptimalan Perencanaan Pembakaran Kalori
-![Logo](https://raw.githubusercontent.com/hudaputrasantosa/hudaputrasantosa.github.io/main/assets/img/projects/project-4.png)
+![Logo](https://raw.githubusercontent.com/hudaputrasantosa/caloriz-application/master/src/assets/images/burn-caloriz.png)
 
+## 🌏 Deployment
+- https://caloriz-application.vercel.app/
 
 ## ⚡ Deskripsi
 BurnCaloriz merupakan aplikasi inovatif yang kami tawarkan bertujuan untuk mengoptimalkan perencanaan pembakaran kalori anda melalui kalkulasi BMR yang akurat dan prediksi kalori yang terbakar melalui berbagai aktivitas olahraga sesuai pilihan Anda.
